@@ -16,7 +16,7 @@
 
 Форм обратной связи нет. Запись идет через телефон, WhatsApp и ссылку на карту.
 
-Если домен будет не `netboli54.ru`, заменить домен в `index.html`, `prices.html`, `robots.txt` и `sitemap.xml`.
+Если подключите другой домен, заменить `https://shelestdan.github.io/massage-site` в `index.html`, `prices.html`, `robots.txt` и `sitemap.xml`.
 
 ## SEO и аналитика
 
