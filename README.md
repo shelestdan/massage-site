@@ -7,7 +7,6 @@
 Загрузить в корень сайта:
 
 - `index.html`
-- `prices.html`
 - `styles.css`
 - `script.js`
 - `robots.txt`
@@ -16,13 +15,12 @@
 
 Форм обратной связи нет. Запись идет через телефон, WhatsApp и ссылку на карту.
 
-Если подключите другой домен, заменить `https://shelestdan.github.io/massage-site` в `index.html`, `prices.html`, `robots.txt` и `sitemap.xml`.
+Если подключите другой домен, заменить `https://shelestdan.github.io/massage-site` в `index.html`, `robots.txt` и `sitemap.xml`.
 
 ## SEO и аналитика
 
 - `assets/favicon.svg` - favicon.
 - `assets/logo.svg` - логотип в шапке.
-- `seo-direct-plan.md` - структура SEO и Яндекс Директ.
 - Для целей Яндекс Метрики добавить ID счетчика перед `script.js`:
 
 ```html
