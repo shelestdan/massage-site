@@ -1,16 +1,7 @@
-const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const revealItems = document.querySelectorAll(".reveal");
-const heroBg = document.querySelector(".hero-bg");
 const metrikaId = window.YA_METRIKA_ID;
-
-const setHeaderState = () => {
-  header?.classList.toggle("is-scrolled", window.scrollY > 24);
-};
-
-setHeaderState();
-window.addEventListener("scroll", setHeaderState, { passive: true });
 
 menuToggle?.addEventListener("click", () => {
   const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
@@ -54,15 +45,3 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
-
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-window.addEventListener(
-  "scroll",
-  () => {
-    if (!heroBg || reduceMotion.matches) return;
-    const offset = Math.min(window.scrollY * 0.12, 80);
-    heroBg.style.transform = `translateY(${offset}px) scale(1)`;
-  },
-  { passive: true }
-);
